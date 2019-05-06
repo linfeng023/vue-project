@@ -21,7 +21,7 @@ export default {
   },
   created(){
     this.$store.commit('SET_BREADCRUMB', [{
-      name: "登录",
+      name: "首页",
       path:'/login'
     },{
       name: "对话框",
