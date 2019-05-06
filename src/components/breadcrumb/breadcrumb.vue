@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-breadcrumb class="app-breadcrumb overflow-ellipsis" separator="/" >
+    <el-breadcrumb separator="/" >
       <el-breadcrumb-item v-for="(item, index) in breadcrumb" :key="index">
         <router-link v-if="item.path" :to="item.path">{{item.name}}</router-link>
         <span v-else class="no-redirect">{{item.name}}</span>
