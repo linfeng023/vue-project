@@ -9,10 +9,10 @@
   </div>
 </template>
 <script>
-import comBreadcrumb from '../breadcrumb/breadcrumb.vue'
+// import comBreadcrumb from '../breadcrumb/breadcrumb.vue'
 export default {
   components:{
-    comBreadcrumb
+    // comBreadcrumb
   },
   data(){
     return{
@@ -29,6 +29,8 @@ export default {
     //   name: "登录",
     //   path:'/login'
     // }])
+    let a = this.getQueryValue('taskId')
+    console.log(a)
   },
   methods:{
     goToLogin(){
@@ -36,7 +38,8 @@ export default {
         sessionStorage.setItem('token',this.username)
         this.$router.push({path:'/Dialog'})
       }
-    }
+    },
+    // openWindow(){}
   }
 }
 </script>

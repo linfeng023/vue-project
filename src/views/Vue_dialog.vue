@@ -8,11 +8,9 @@
 </template>
 <script> 
 import comDialog from '../components/dialog.vue'
-import comBreadcrumb from '../components/breadcrumb/breadcrumb.vue'
 export default {
   components:{
     comDialog,
-    comBreadcrumb
   },
   data(){
     return{

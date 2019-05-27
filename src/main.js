@@ -7,8 +7,15 @@ import ElementUI from 'element-ui';
 import store from './store/index';
 import 'element-ui/lib/theme-chalk/index.css';
 
+//引入获取url参数的公共方法
+import getQueryValue from './until/getUrlValue.js';
+Vue.prototype.getQueryValue = getQueryValue;
+
+// 引入公用组件
+import './until/components';
 
 
+// vuex状态仓库
 Vue.prototype.$store = store;
 
 Vue.config.productionTip = false

@@ -4,31 +4,23 @@ import Router from 'vue-router'
 // 登录页
 import login from '@/components/login/login.vue'
 
+import Full from '@/container/Full'
 import Dialog from '@/views/Vue_dialog.vue'
 
 Vue.use(Router)
 
 var router = new Router({
   routes:[
-    // {
-    //   path:'/',
-    //   component:Dialog,
-    //   children:[
-    //     {
-    //       path: '/',
-    //       component: Dialog
-    //     },
-    //     {
-    //       path:'/Dialog',
-    //       name:'Dialog',
-    //       component:Dialog,
-    //     }
-    //   ]
-    // },
     {
-      path:'/Dialog',
-      name:'Dialog',
-      component:Dialog,
+      path:'/',
+      component:Full,
+      children:[
+        {
+          path:'/Dialog',
+          name:'Dialog',
+          component:Dialog,
+        },
+      ]
     },
     {
       path:'/login',
